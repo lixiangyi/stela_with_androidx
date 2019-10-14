@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stela_app_dp_40"
+        android:layout_marginTop="@dimen/stela_app_dp_24"
+        android:background="@drawable/stela_app_selector_login_bg"
+        android:gravity="center_vertical|left"
+        android:hint="@string/edit_hint_email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="@dimen/stela_app_dp_16"
+        android:paddingRight="@dimen/stela_app_dp_16"
+        android:textColor="@color/color_73"
+        android:textColorHint="@color/color_b2"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/stela_app_dp_24">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stela_app_dp_40"
+            android:background="@drawable/stela_app_selector_login_bg"
+            android:gravity="center_vertical|left"
+            android:hint="@string/edit_hint_password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/stela_app_dp_16"
+            android:paddingRight="@dimen/stela_app_dp_16"
+            android:textColor="@color/color_73"
+            android:textColorHint="@color/color_b2"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_password_eye"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/stela_app_dp_20"
+            android:src="@mipmap/eye_close" />
+    </RelativeLayout>
+</LinearLayout>

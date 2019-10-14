@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_comment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/stela_app_dp_20"
+        android:layout_marginRight="@dimen/stela_app_dp_20"
+        android:background="@color/grey_line_e3" />
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_avatar"-->
+    <!--android:layout_width="@dimen/stela_app_dp_46"-->
+    <!--android:layout_height="@dimen/stela_app_dp_46"-->
+    <!--android:layout_marginLeft="@dimen/stela_app_dp_56"-->
+    <!--android:layout_marginTop="@dimen/stela_app_dp_18"-->
+    <!--android:layout_marginRight="@dimen/stela_app_dp_20"-->
+    <!--android:src="@mipmap/example_bg" />-->
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/stela_app_dp_46"
+        android:layout_height="@dimen/stela_app_dp_46"
+        android:layout_marginLeft="@dimen/stela_app_dp_56"
+        android:layout_marginTop="@dimen/stela_app_dp_18"
+        android:layout_marginRight="@dimen/stela_app_dp_20"
+        android:scaleType="centerCrop"
+        app:riv_border_color="@color/white"
+        app:riv_border_width="2dip"
+        app:riv_corner_radius="30dip"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/stela_app_dp_24"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:ellipsize="end"
+        android:maxWidth="@dimen/stela_app_dp_150"
+        android:maxLines="1"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/stela_app_sp_14"
+        tools:text="Codmic" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/stela_app_dp_24"
+        android:layout_toRightOf="@+id/tv_nickname"
+        android:maxLines="1"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/stela_app_sp_14"
+        tools:text=" |  17:29" />
+
+    <TextView
+        android:id="@+id/tv_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nickname"
+        android:layout_marginTop="@dimen/stela_app_dp_8"
+        android:layout_marginRight="@dimen/stela_app_dp_16"
+        android:layout_marginBottom="@dimen/stela_app_always_dp_15"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:text="Fruit… or Cookie… Fruit… Cookie… Me Cookie Monster! This No-Brainer!"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/stela_app_always_sp_16" />
+
+
+</RelativeLayout>

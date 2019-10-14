@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    tools:context=".ui.chapter.ChapterActivity">
+   <include
+       layout="@layout/home_title"/>
+   <com.stela.comics_unlimited.widget.InnerRecyclerview
+       android:id="@+id/rv_inner_home"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+      ></com.stela.comics_unlimited.widget.InnerRecyclerview>
+
+</LinearLayout>

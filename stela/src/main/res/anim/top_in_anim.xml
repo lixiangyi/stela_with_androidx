@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--
+            startOffset：动画开始前的延迟时间
+            interpolator：加速器用来设置一些平移的动画效果
+            fromXDelta：X左边的初始位置
+            toXDelta：X左边的结束位置
+            fromYDelta：Y坐标的初始位置
+            toYDelta：Y坐标的结束位置
+        -->
+    <translate
+        android:duration="300"
+        android:fromXDelta="0"
+        android:fromYDelta="-100%"
+        android:toXDelta="0"
+        android:toYDelta="0"
+        android:fillAfter="true"
+       />
+
+</set>

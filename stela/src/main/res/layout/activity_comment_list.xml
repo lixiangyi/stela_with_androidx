@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--<include layout="@layout/nav_common" />-->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srl_series_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/stela_app_dp_10">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_comments_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+    </androidx.recyclerview.widget.RecyclerView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <RelativeLayout
+        android:id="@+id/rl_comment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stela_app_dp_60"
+       >
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_line_e3"/>
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/stela_app_dp_40"
+            android:layout_height="@dimen/stela_app_dp_40"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            app:riv_border_color="@color/white"
+            app:riv_border_width="2dip"
+            app:riv_corner_radius="30dip"
+            app:riv_oval="true"
+            android:layout_marginLeft="@dimen/stela_app_dp_20"/>
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="@dimen/stela_app_dp_40"
+            android:layout_height="@dimen/stela_app_dp_40"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/stela_app_always_sp_24"
+            android:text="SF"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/stela_app_dp_20" />
+        <TextView
+            android:id="@+id/tv_add_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:textColor="@color/color_b2"
+            android:text="Add Comment"
+            android:layout_toRightOf="@+id/iv_head"
+            android:layout_marginLeft="@dimen/stela_app_dp_20" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/stela_app_dp_20"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.login.AccountActivationActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/stela_app_dp_42"
+        android:src="@mipmap/img_email" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/stela_app_dp_36"
+        android:text="An email with a verification link has been sent to:"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/stela_app_dp_16"
+        android:textSize="15sp"
+        tools:text="username@gmail.com" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/stela_app_dp_16"
+        android:text="Please verify your email to access your account."
+        android:textSize="13sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stela_app_dp_46"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/btn_resend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="@dimen/stela_app_always_dp_15"
+            android:paddingTop="@dimen/stela_app_dp_5"
+            android:paddingRight="@dimen/stela_app_always_dp_15"
+            android:paddingBottom="@dimen/stela_app_dp_5"
+            android:text="Resend Verification Link"
+            android:textColor="@color/color_73"
+            android:textSize="@dimen/stela_app_sp_12" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_back_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stela_app_dp_40"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/stela_app_dp_32"
+        android:background="@color/stela_blue"
+        android:gravity="center"
+        android:text="Return to sign in"
+        android:textColor="@color/white"
+        android:textSize="@dimen/stela_app_sp_14" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/stela_app_dp_20"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/acb_register_faq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stela_app_dp_10"
+            android:layout_marginRight="@dimen/stela_app_dp_10"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="FAQ"
+            android:textColor="@color/stela_blue_text"
+            android:textSize="@dimen/stela_app_sp_10" />
+
+        <View
+            android:id="@+id/aciv_register_bottom_left"
+            android:layout_width="@dimen/stela_app_always_dp_1"
+            android:layout_height="@dimen/stela_app_dp_10"
+            android:layout_marginTop="@dimen/stela_app_dp_6"
+            android:layout_marginBottom="@dimen/stela_app_dp_6"
+            android:background="@color/stela_blue" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/acb_register_cs"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/stela_app_dp_24"
+            android:layout_marginLeft="@dimen/stela_app_dp_10"
+            android:layout_marginRight="@dimen/stela_app_dp_10"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Contact  Support"
+
+            android:textColor="@color/stela_blue_text"
+            android:textSize="@dimen/stela_app_sp_10" />
+
+        <View
+            android:id="@+id/aciv_register_bottom_right"
+            android:layout_width="@dimen/stela_app_always_dp_1"
+            android:layout_height="@dimen/stela_app_dp_10"
+            android:layout_marginTop="@dimen/stela_app_dp_6"
+            android:layout_marginBottom="@dimen/stela_app_dp_6"
+            android:background="@color/stela_blue" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actv_register_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stela_app_dp_10"
+            android:layout_marginRight="@dimen/stela_app_dp_10"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:textColor="@color/color_b2"
+            android:textSize="@dimen/stela_app_sp_10"
+            tools:text="1.09" />
+    </LinearLayout>
+</LinearLayout>

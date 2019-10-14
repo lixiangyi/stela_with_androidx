@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_error_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/stela_app_dp_20"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_error" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_error_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_error"
+            android:layout_marginLeft="@dimen/stela_app_dp_5"
+            android:lineSpacingExtra="1dp"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="@dimen/stela_app_dp_10"
+            android:textColor="@color/red"
+            android:textSize="@dimen/stela_app_sp_12"
+            tools:text="@string/error_password_info_new" />
+
+    </RelativeLayout>
+
+</FrameLayout>

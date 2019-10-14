@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/stela_app_dp_60"
+    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <com.stela.comics_unlimited.widget.BobbleView
+        android:id="@+id/bubble_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:textSize="@dimen/stela_app_sp_8"
+        android:visibility="gone"
+        app:num="0" />
+
+    <TextView
+        android:id="@+id/tv_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/stela_app_dp_60"
+        android:gravity="center"
+        tools:text="BRADFF"
+        android:layout_marginLeft="@dimen/stela_app_dp_10"
+        android:textSize="@dimen/stela_app_sp_14"
+        android:textColor="@drawable/stela_app_selector_button_text_tab_first" />
+
+
+</LinearLayout>

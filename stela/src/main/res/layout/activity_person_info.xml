@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/nav_header_main" />
+
+    <TextView
+        android:id="@+id/tv_change_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stela_app_dp_64"
+        android:text="Change Nickname"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/stela_app_dp_20"
+        android:textColor="@color/color_73"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/nav_line" />
+
+
+    <TextView
+        android:id="@+id/tv_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stela_app_dp_64"
+        android:text="Change Password"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/stela_app_dp_20"
+        android:textColor="@color/color_73"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/nav_line" />
+
+
+    <TextView
+        android:id="@+id/tv_subcribe_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stela_app_dp_64"
+        android:text="Subscription Info"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/stela_app_dp_20"
+        android:textColor="@color/color_73"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/nav_line" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/stela_app_dp_20"
+        android:gravity="center"
+        android:padding="@dimen/stela_app_dp_2"
+        tools:text="v 2.0.0"
+        android:textColor="@color/color_73"
+        android:textSize="@dimen/stela_app_sp_10" />
+
+</LinearLayout>

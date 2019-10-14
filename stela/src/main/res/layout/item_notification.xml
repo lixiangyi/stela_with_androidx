@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="@dimen/stela_app_dp_10"
+    app:cardCornerRadius="6dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="false"
+    android:padding="-3dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.stela.comics_unlimited.widget.ScaleView.ScaleImage
+            android:id="@+id/iv_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/setup_banners_1"
+            android:scaleType="centerCrop"
+            app:scale="0.46" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            >
+            <com.stela.comics_unlimited.widget.BobbleView
+                android:id="@+id/bobble_unread"
+                android:layout_width="@dimen/stela_app_dp_20"
+                android:layout_height="@dimen/stela_app_dp_20"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/stela_app_dp_10"
+                app:textSize="@dimen/stela_app_dp_8"
+                app:num="0" />
+
+            <TextView
+                android:id="@+id/tv_notification_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_73"
+                android:layout_marginLeft="30dp"
+                tools:text="New Release! Perfect Timing" />
+
+            <ImageView
+                android:id="@+id/iv_delete_notification"
+                android:layout_width="@dimen/stela_app_dp_20"
+                android:layout_height="@dimen/stela_app_dp_20"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/stela_app_dp_9"
+                android:src="@mipmap/splash_close" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_notification_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_73"
+            android:textSize="12sp"
+            android:layout_marginTop="@dimen/stela_app_dp_10"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="@dimen/stela_app_dp_20"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stela_app_dp_28"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_notification_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_73"
+                android:text="1hr ago"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tv_see_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:padding="@dimen/stela_app_dp_5"
+                android:layout_centerVertical="true"
+                android:textColor="@color/stela_blue_text"
+                tools:text="See More >"
+                android:layout_marginRight="@dimen/stela_app_always_dp_11"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

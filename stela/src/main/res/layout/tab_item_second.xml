@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/stela_app_dp_46">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="-3dp"
+        android:layout_margin="@dimen/stela_app_dp_5"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+        <!--android:background="@mipmap/shadow_button_new"-->
+
+        <TextView
+            android:id="@+id/tv_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stela_app_dp_40"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="@dimen/stela_app_always_dp_15"
+            android:paddingTop="@dimen/stela_app_dp_5"
+            android:paddingRight="@dimen/stela_app_always_dp_15"
+            android:paddingBottom="@dimen/stela_app_dp_5"
+            android:text="BRADFF"
+            android:textSize="@dimen/stela_app_sp_12"
+            android:textColor="@drawable/stela_app_selector_button_text_tab_second" />
+    </androidx.cardview.widget.CardView>
+
+    <com.stela.comics_unlimited.widget.BobbleView
+        android:id="@+id/bubble_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/stela_app_dp_3"
+        android:layout_gravity="right"
+        android:elevation="5dp"
+        android:visibility="gone"
+        app:textSize="@dimen/stela_app_sp_8"
+        app:num="8888" />
+
+</FrameLayout>

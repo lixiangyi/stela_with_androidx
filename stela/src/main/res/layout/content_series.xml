@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_series">
+
+    <com.stela.comics_unlimited.widget.ScaleView.ScaleImage
+        android:id="@+id/iv_series"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed|snap" />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tb_series"
+        android:layout_width="match_parent"
+        app:tabIndicatorHeight="@dimen/tab_bar_IndicatorHeight"
+        app:tabIndicatorColor="@color/color_d8"
+        android:background="@color/white"
+        app:layout_collapseMode="pin"
+        android:layout_height="@dimen/nav_bar_height"
+        app:tabSelectedTextColor="@color/color_73"
+        app:tabTextColor="@color/color_b2"></com.google.android.material.tabs.TabLayout>
+
+
+
+</LinearLayout>

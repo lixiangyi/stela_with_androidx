@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/body_text_color_59"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/stela_app_dp_92"
+        android:text="Enter your PIN" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/pin_view"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="@dimen/stela_app_dp_48"
+        android:inputType="numberPassword"
+        android:padding="@dimen/stela_app_dp_10"
+        android:textColor="@color/body_text_color_59"
+        android:textSize="@dimen/stela_app_sp_22"
+        android:cursorVisible="false"
+        app:hideLineWhenFilled="true"
+        app:viewType="none"
+        app:itemCount="4"
+        app:itemSpacing="@dimen/stela_app_dp_32"
+        app:itemWidth="@dimen/stela_app_sp_22"
+        app:itemHeight="@dimen/stela_app_sp_22"
+        />
+    <!--    android:itemBackground="@mipmap/ic_launcher"-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_pin_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stela_app_dp_60"
+        android:background="@drawable/stela_app_selector_button"
+        android:layout_below="@+id/pin_view"
+        android:textColor="@color/white"
+        android:enabled="false"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/stela_app_dp_40"
+        android:layout_marginLeft="@dimen/stela_app_dp_20"
+        android:layout_marginRight="@dimen/stela_app_dp_20"
+        android:text="Submit"/>
+<!--    android:background="@drawable/stela_app_selector_button_text_tab_second"-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_pin_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_pin_submit"
+        android:textColor="@color/stela_blue"
+        android:layout_centerHorizontal="true"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/stela_app_dp_16"
+        android:layout_marginLeft="@dimen/stela_app_dp_40"
+        android:layout_marginRight="@dimen/stela_app_dp_40"
+        android:text="Forgot PIN?"/>
+</RelativeLayout>

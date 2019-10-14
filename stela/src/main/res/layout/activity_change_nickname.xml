@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_edit_nick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stela_app_dp_60"
+        android:layout_marginLeft="@dimen/stela_app_dp_24"
+        android:layout_marginTop="@dimen/stela_app_dp_32"
+        android:layout_marginRight="@dimen/stela_app_dp_24"
+        android:layout_marginBottom="@dimen/stela_app_dp_20">
+
+        <EditText
+            android:id="@+id/et_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stela_app_dp_60"
+            android:layout_weight="1"
+            android:background="@drawable/stela_app_selector_login_bg"
+            android:hint="CurrentNickname"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/stela_app_dp_24"
+            android:singleLine="true"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/stela_app_always_sp_16" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_error_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_edit_nick"
+        android:layout_marginLeft="@dimen/stela_app_dp_24"
+        android:layout_marginTop="@dimen/stela_app_dp_20"
+        android:layout_marginRight="@dimen/stela_app_dp_24"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_error" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_error_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_error"
+            android:lineSpacingExtra="1dp"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="@dimen/stela_app_dp_10"
+            android:textColor="@color/red"
+            android:textSize="@dimen/stela_app_sp_12"
+            tools:text="@string/error_password_info_new" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+    <TextView
+        android:id="@+id/tv_select_nick_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stela_app_dp_80"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/avatar_bg_color"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="Select"
+        android:textColor="@color/white"
+        android:textSize="@dimen/stela_app_sp_16" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">base</string>
+    <string name="net_con_error">Network connection timeout, please check your network status and try again later!</string>
+    <string name="null_error">Null pointer exception</string>
+    <string name="cer_error">Certificate authentication failure</string>
+    <string name="type_error">Type conversion error</string>
+    <string name="prase_error">Parse error</string>
+    <string name="error"> error</string>
+</resources>

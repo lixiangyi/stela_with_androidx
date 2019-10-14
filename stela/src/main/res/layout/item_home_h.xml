@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stela.comics_unlimited.widget.ScaleView.ScaleFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:scale="0.71">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner_h"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:indicator_margin="5dp"
+        app:indicator_width="7dp"
+        app:banner_layout="@layout/banner_new"
+        app:banner_default_image="@drawable/stela_loading_192"
+        app:indicator_height="7dp"/>
+    <!--<com.stela.comics_unlimited.view.HomeBanner-->
+        <!--android:id="@+id/banner_g"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:scale="0.71">-->
+
+    <!--</com.stela.comics_unlimited.view.HomeBanner>-->
+</com.stela.comics_unlimited.widget.ScaleView.ScaleFrameLayout>

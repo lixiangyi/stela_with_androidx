@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/stela_app_dp_100"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/stela_app_dp_20"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/stela_app_dp_24"
+            android:text="Please select up to 3 titles that look interesting to you."
+            android:textColor="@color/color_73"
+            android:textSize="13sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_select_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/stela_app_dp_20"
+           ></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_select_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stela_app_dp_80"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/avatar_bg_color"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/stela_app_sp_16" />
+</RelativeLayout>

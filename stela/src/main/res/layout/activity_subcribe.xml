@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv_sub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="130dp">
+        <!--android:background="@mipmap/stela_splash_background"-->
+
+        <LinearLayout
+            android:id="@+id/ll_subscribe_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/stela_app_dp_56"
+            android:orientation="vertical">
+
+            <com.stela.comics_unlimited.widget.ScaleView.ScaleImage
+                android:id="@+id/iv_head_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:scale="0.5" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_subcribe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/stela_app_dp_20"></androidx.recyclerview.widget.RecyclerView>
+
+            <com.stela.comics_unlimited.widget.ScaleView.ScaleImage
+                android:id="@+id/iv_foot_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:visibility="gone"
+                app:scale="0.5" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/stela_app_dp_10"
+        android:layout_marginRight="@dimen/stela_app_dp_10"
+        android:layout_marginBottom="@dimen/stela_app_dp_100"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_faq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/stela_app_dp_5"
+            android:gravity="center"
+            android:padding="@dimen/stela_app_dp_2"
+            android:text="FAQ"
+            android:textColor="@color/stela_blue_text"
+            android:textSize="@dimen/stela_app_sp_12" />
+
+        <View
+            android:layout_width="@dimen/stela_app_always_dp_1"
+            android:layout_height="@dimen/stela_app_dp_12"
+            android:layout_marginTop="@dimen/stela_app_dp_6"
+            android:layout_marginBottom="@dimen/stela_app_dp_6"
+            android:background="@color/stela_blue_text" />
+
+        <TextView
+            android:id="@+id/tv_ts"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/stela_app_dp_24"
+            android:layout_marginLeft="@dimen/stela_app_dp_5"
+            android:layout_marginRight="@dimen/stela_app_dp_5"
+            android:gravity="center"
+            android:text="Terms of Service"
+            android:textColor="@color/stela_blue_text"
+            android:textSize="@dimen/stela_app_sp_10" />
+
+        <View
+            android:layout_width="@dimen/stela_app_always_dp_1"
+            android:layout_height="@dimen/stela_app_dp_12"
+            android:layout_marginTop="@dimen/stela_app_dp_6"
+            android:layout_marginBottom="@dimen/stela_app_dp_6"
+            android:background="@color/stela_blue_text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_p_p"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/stela_app_dp_24"
+            android:layout_marginLeft="@dimen/stela_app_dp_5"
+            android:layout_marginRight="@dimen/stela_app_dp_5"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Privacy Policy"
+            android:textColor="@color/stela_blue_text"
+            android:textSize="@dimen/stela_app_sp_10" />
+
+        <View
+            android:layout_width="@dimen/stela_app_always_dp_1"
+            android:layout_height="@dimen/stela_app_dp_12"
+            android:layout_marginTop="@dimen/stela_app_dp_6"
+            android:layout_marginBottom="@dimen/stela_app_dp_6"
+            android:background="@color/stela_blue_text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_cs"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/stela_app_dp_24"
+            android:layout_marginLeft="@dimen/stela_app_dp_5"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Subscription Info"
+            android:textColor="@color/stela_blue_text"
+            android:textSize="@dimen/stela_app_sp_10" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_subcribe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stela_app_dp_80"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/stela_blue"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        tools:text="Start 7day Free Trial" />
+
+    <ImageView
+        android:id="@+id/iv_colse"
+        android:layout_width="@dimen/stela_app_dp_20"
+        android:layout_height="@dimen/stela_app_dp_20"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/stela_app_dp_20"
+        android:layout_marginRight="@dimen/stela_app_dp_20"
+        android:src="@mipmap/splash_close" />
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_login_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/stela_app_dp_20"
+            android:paddingRight="@dimen/stela_app_dp_20">
+
+            <include layout="@layout/layout_login_edit" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/acb_register_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/stela_app_dp_18"
+                android:text="Forgot Password?"
+                android:textColor="@color/stela_blue_text"
+                android:textSize="@dimen/stela_app_sp_12"
+                android:visibility="visible" />
+
+            <include layout="@layout/layout_login_error_info" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/stela_app_dp_40"
+                android:layout_marginTop="@dimen/stela_app_always_sp_22"
+                android:background="@color/stela_blue"
+                android:gravity="center"
+                android:text="Sign In"
+                android:textColor="@color/white"
+                android:textSize="@dimen/stela_app_sp_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/stela_app_dp_100"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_color_97" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/stela_app_dp_20"
+                    android:layout_marginRight="@dimen/stela_app_dp_20"
+                    android:gravity="center_horizontal"
+                    android:text="or"
+                    android:textColor="@color/body_text_color_59"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="@dimen/stela_app_dp_100"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_color_97" />
+            </LinearLayout>
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button_google"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/stela_app_dp_44"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/stela_app_dp_4" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_go_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/stela_app_dp_32"
+                tools:text="No account? Create one"
+                android:textSize="13sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/stela_app_dp_20"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/acb_register_faq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stela_app_dp_10"
+            android:layout_marginRight="@dimen/stela_app_dp_10"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="FAQ"
+            android:textColor="@color/stela_blue_text"
+            android:textSize="@dimen/stela_app_sp_10" />
+
+        <View
+            android:id="@+id/aciv_register_bottom_left"
+            android:layout_width="@dimen/stela_app_always_dp_1"
+            android:layout_height="@dimen/stela_app_dp_10"
+            android:layout_marginTop="@dimen/stela_app_dp_6"
+            android:layout_marginBottom="@dimen/stela_app_dp_6"
+            android:background="@color/stela_blue" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/acb_register_cs"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/stela_app_dp_24"
+            android:layout_marginLeft="@dimen/stela_app_dp_10"
+            android:layout_marginRight="@dimen/stela_app_dp_10"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Contact  Support"
+
+            android:textColor="@color/stela_blue_text"
+            android:textSize="@dimen/stela_app_sp_10" />
+
+        <View
+            android:id="@+id/aciv_register_bottom_right"
+            android:layout_width="@dimen/stela_app_always_dp_1"
+            android:layout_height="@dimen/stela_app_dp_10"
+            android:layout_marginTop="@dimen/stela_app_dp_6"
+            android:layout_marginBottom="@dimen/stela_app_dp_6"
+            android:background="@color/stela_blue" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actv_register_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stela_app_dp_10"
+            android:layout_marginRight="@dimen/stela_app_dp_10"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:textColor="@color/color_b2"
+            android:textSize="@dimen/stela_app_sp_10"
+            tools:text="1.09" />
+    </LinearLayout>
+</LinearLayout>

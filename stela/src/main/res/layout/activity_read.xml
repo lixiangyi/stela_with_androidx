@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.chapter.ChapterActivity">
+    <!--android:scrollbarStyle="outsideOverlay"-->
+    <!--android:scrollbars="vertical"-->
+    <com.stela.comics_unlimited.widget.SingleTapRecyclerView
+        android:id="@+id/rv_read"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!--android:scrollbarStyle="outsideOverlay"-->
+        <!--android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"-->
+        <!--android:scrollbarTrackVertical="@drawable/progress_vertical"-->
+        <!--app:fastScrollEnabled="true"-->
+        <!--android:scrollbarSize="@dimen/stela_app_dp_3"-->
+        <!--android:scrollbars="vertical"-->
+    </com.stela.comics_unlimited.widget.SingleTapRecyclerView>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_alpha"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/chapter_mask" />
+
+    <include layout="@layout/common_header" />
+
+    <com.stela.comics_unlimited.widget.VerticalSeekBar
+        android:id="@+id/vs_progres"
+        android:layout_width="@dimen/stela_app_dp_24"
+        android:layout_height="@dimen/stela_app_dp_280"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+
+    <include
+        layout="@layout/read_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

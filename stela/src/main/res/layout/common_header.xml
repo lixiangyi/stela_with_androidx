@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    app:popupTheme="@style/ActivityTheme.PopupOverlay">
+
+    <TextView
+        android:id="@+id/iv_center_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/stela_logo"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/iv_center_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/stela_app_dp_60"
+        android:layout_marginRight="@dimen/stela_app_dp_60"
+        android:maxLines="1"
+        android:visibility="visible"
+        android:textSize="@dimen/stela_app_sp_12"
+        android:textColor="@color/body_text_color_59"
+        tools:text="" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/stela_app_dp_10"
+        android:layout_marginRight="@dimen/stela_app_dp_10"
+        android:background="@color/nav_line_color" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_left_icon"
+        android:layout_width="19dp"
+        android:layout_height="26dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:padding="5dp"
+        android:src="@mipmap/back" />
+
+    <!--<android.support.v7.widget.AppCompatImageView-->
+        <!--android:id="@+id/tv_like_top"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toLeftOf="@+id/tv_comment_top"-->
+        <!--android:layout_marginRight="@dimen/stela_app_dp_16"-->
+        <!--android:src="@mipmap/ic_like"-->
+        <!--/>-->
+
+    <!--<android.support.v7.widget.AppCompatImageView-->
+        <!--android:id="@+id/tv_comment_top"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:src="@mipmap/ic_comment"-->
+        <!--android:layout_toLeftOf="@+id/iv_right_icon"-->
+        <!--android:layout_marginRight="@dimen/stela_app_dp_16"-->
+       <!--/>-->
+    <TextView
+        android:id="@+id/tv_like_top"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableLeft="@drawable/stela_app_selector_like"
+        android:layout_toLeftOf="@+id/tv_comment_top"
+        android:layout_marginRight="@dimen/stela_app_dp_16"
+
+        />
+    <TextView
+        android:id="@+id/tv_comment_top"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableLeft="@mipmap/ic_comment"
+        android:layout_toLeftOf="@+id/iv_right_icon"
+        android:layout_marginRight="@dimen/stela_app_dp_10"
+      />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_read_chapter"
+        android:padding="@dimen/stela_app_dp_5"
+        android:layout_marginRight="@dimen/stela_app_dp_10"
+        android:visibility="visible" />
+
+</RelativeLayout>

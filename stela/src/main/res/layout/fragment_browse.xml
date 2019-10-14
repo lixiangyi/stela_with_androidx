@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <include
+        layout="@layout/empty_refresh"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tb_browse"
+        style="@style/TabLayoutCustom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stela_app_dp_80"
+        app:tabGravity="fill"
+        app:elevation="6dp"
+        app:tabMaxWidth="0dp"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabPadding="-1dp"
+        app:tabPaddingBottom="-1dp"
+        app:tabPaddingEnd="-1dp"
+        app:tabPaddingStart="-1dp"
+         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/tool_bar_shadow" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_browse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

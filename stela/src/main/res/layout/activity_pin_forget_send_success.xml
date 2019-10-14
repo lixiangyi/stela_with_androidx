@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_pin_forgot_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/stela_app_sp_14"
+        android:textColor="@color/color_73"
+        android:layout_margin="@dimen/stela_app_dp_20"
+        android:text="PLEASE CHECK YOUR EMAIL" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_pin_forgot_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pin_forgot_title"
+        android:textColor="@color/color_73"
+        android:textSize="11sp"
+        android:layout_marginLeft="@dimen/stela_app_dp_20"
+        android:layout_marginRight="@dimen/stela_app_dp_20"
+        tools:text="PLEASE CHECK YOUR EMAIL
+Head to your inbox ( wal******@gmail.com ) and follow the instructions to reset your PIN."/>
+
+</RelativeLayout>

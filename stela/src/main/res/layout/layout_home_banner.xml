@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.stela.comics_unlimited.widget.HomeBannerViewPager
+        android:id="@+id/vp_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.stela.comics_unlimited.widget.HomeBannerViewPager>
+
+    <com.stela.comics_unlimited.widget.CircleIndicator
+        android:id="@+id/ci_home_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/stela_app_dp_20"
+        android:orientation="horizontal"></com.stela.comics_unlimited.widget.CircleIndicator>
+</FrameLayout>

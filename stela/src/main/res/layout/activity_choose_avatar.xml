@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_choose_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/stela_app_dp_20"
+       ></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_select_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stela_app_dp_80"
+        android:gravity="center"
+        android:text="Select"
+        android:textSize="@dimen/stela_app_sp_16"
+        android:textColor="@color/white"
+        android:enabled="false"
+        android:background="@drawable/avatar_bg_color"
+        />
+</LinearLayout>

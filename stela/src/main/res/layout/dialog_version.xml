@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_dialog"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/stela_logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_version_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/stela_app_dp_132"
+        android:layout_marginLeft="@dimen/stela_app_dp_40"
+        android:layout_marginRight="@dimen/stela_app_dp_40"
+        android:layout_below="@+id/image"
+        android:maxLines="1"
+        android:textSize="18sp"
+        android:text="Introducing STELA 2.0"
+        android:textColor="@color/body_text_color_59" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/stela_app_dp_56"
+        android:layout_marginTop="@dimen/stela_app_dp_20"
+        android:layout_below="@+id/tv_version_title">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_version_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stela_app_dp_40"
+            android:layout_marginRight="@dimen/stela_app_dp_40"
+            android:text="1. Improve user experience\n2. Parental control mode\n3. Smart recommendation
+        \n4. New contents
+        \n5. Bugfix"
+            android:textColor="@color/color_73" />
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_version_btn"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/stela_app_dp_56"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Update now!"
+        android:background="@color/stela_blue"
+        android:textSize="@dimen/stela_app_sp_14" />
+
+</RelativeLayout>

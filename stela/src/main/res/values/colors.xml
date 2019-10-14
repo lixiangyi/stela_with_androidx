@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/stela_blue</color>
+    <color name="colorPrimaryDark">@color/stela_blue</color>
+    <color name="colorAccent">@color/stela_blue</color>
+    <color name="textColorPrimary">@color/body_text_color_59</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="stela_blue">#29a8e0</color>
+    <color name="stela_blue_text">@color/stela_blue</color>
+<!--    <color name="stelaBlueText">#54b9e6</color>-->
+    <color name="grey_line_e3">#e3e3e3</color>
+    <color name="nav_line_color">#f1f1f1</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_b2">#b2b2b2</color>
+    <color name="color_73">#737373</color>
+    <color name="color_94">#949494</color>
+    <color name="gray_color_97">#979797</color>
+    <color name="body_text_color_59">#595959</color>
+    <color name="color_d8">#d8d8d8</color>
+<!--    <color name="card_title_color">#595959</color>-->
+<!--    <color name="card_subtitle_color">#737373</color>-->
+<!--    <color name="gray_boder_color">#b2b2b2</color>-->
+
+
+</resources>

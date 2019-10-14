@@ -1,0 +1,34 @@
+<resources>
+
+    <style name="BDAlertDialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Minor指竖屏模式下的宽度 -->
+        <item name="android:windowMinWidthMinor">300dp</item>
+        <item name="windowFixedWidthMinor">300dp</item>
+    </style>
+
+    <style name="BDAlertDialogNew" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <!--<item name="android:windowAnimationStyle">@style/Base.Animation.AppCompat.Dialog</item>-->
+        <!--<item name="android:windowFrame">@null</item>-->
+        <!--是否浮在窗口之上-->
+        <!--<item name="android:windowIsFloating">false</item>-->
+        <!--是否显示title-->
+        <item name="android:windowNoTitle">true</item>
+        <!--dialog之外没有焦点的区域是否罩上黑色半透明-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--<item name="android:windowMinWidthMinor">96dp</item>-->
+        <!--<item name="windowFixedWidthMinor">96dp</item>-->
+        <item name="android:background">@color/transparent</item>
+
+
+
+        <!-- 背景颜色 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 背后的阴影 -->
+        <item name="android:windowIsTranslucent">false</item>
+
+    </style>
+
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 定义一个动画帧，Drawable为img0，持续时间50毫秒 -->
+         <item android:drawable="@drawable/stela_logo_loading_192_01" android:duration="50" />
+         <item android:drawable="@drawable/stela_logo_loading_192_02" android:duration="50" />
+         <item android:drawable="@drawable/stela_logo_loading_192_03" android:duration="50" />
+         <item android:drawable="@drawable/stela_logo_loading_192_04" android:duration="50" />
+         <item android:drawable="@drawable/stela_logo_loading_192_05" android:duration="50" />
+         <item android:drawable="@drawable/stela_logo_loading_192_06" android:duration="50" />
+         <item android:drawable="@drawable/stela_logo_loading_192_07" android:duration="50" />
+         <item android:drawable="@drawable/stela_logo_loading_192_08" android:duration="50" />
+         <item android:drawable="@drawable/stela_logo_loading_192_09" android:duration="50" />
+         <item android:drawable="@drawable/stela_logo_loading_192_10" android:duration="50" />
+         <item android:drawable="@drawable/stela_logo_loading_192_11" android:duration="50" />
+         <item android:drawable="@drawable/stela_logo_loading_192_12" android:duration="50" />
+
+</animation-list>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stela.comics_unlimited.widget.ScaleView.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_head"
+    android:gravity="center_horizontal"
+    android:background="@color/body_text_color_59"
+    app:scale="0.56"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingLeft="@dimen/stela_app_dp_16"
+        android:paddingRight="@dimen/stela_app_dp_16"
+        android:paddingBottom="@dimen/stela_app_dp_8"
+        android:paddingTop="@dimen/stela_app_dp_8"
+        android:src="@mipmap/back"
+        android:visibility="visible" />
+    <!--android:background="@drawable/side_nav_bar"-->
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_header"
+        android:layout_width="@dimen/stela_app_dp_74"
+        android:layout_height="@dimen/stela_app_dp_74"
+        android:layout_marginTop="@dimen/stela_app_dp_24"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        app:riv_border_color="@color/white"
+        app:riv_border_width="2dip"
+        app:riv_corner_radius="30dip"
+        app:riv_oval="true" />
+
+
+    <!--<com.stela.comics_unlimited.view.ScaleImage-->
+    <!--android:id="@+id/iv_header"-->
+    <!--android:layout_width="@dimen/stela_app_dp_64"-->
+    <!--android:layout_height="@dimen/stela_app_dp_64"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:src="@mipmap/example_bg" />-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_header"
+        android:layout_marginTop="@dimen/stela_app_dp_6"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:text="@string/nav_header_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_change_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_header"
+        android:layout_marginTop="@dimen/stela_app_dp_6"
+        android:gravity="center"
+        android:text="Change Avatar"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/stela_blue"
+        android:textSize="13sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_header"
+        android:layout_marginTop="@dimen/stela_app_dp_6"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:text="@string/nav_header_email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_header"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/stela_app_dp_6"
+        android:gravity="center"
+        android:text="View Profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/stela_blue"
+        android:textSize="10sp" />
+
+
+</com.stela.comics_unlimited.widget.ScaleView.ScaleLinearLayout>

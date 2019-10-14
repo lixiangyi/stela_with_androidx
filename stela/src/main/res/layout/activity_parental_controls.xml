@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <androidx.appcompat.widget.AppCompatTextView
+       android:id="@+id/title"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="@dimen/stela_app_sp_14"
+       android:text="Parental Controls"
+       android:layout_marginTop="@dimen/stela_app_dp_20"
+       android:layout_marginLeft="@dimen/stela_app_dp_20"
+       android:textColor="@color/body_text_color_59"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:textSize="@dimen/stela_app_sp_12"
+        android:textColor="@color/color_73"
+        android:layout_marginLeft="@dimen/stela_app_dp_20"
+        android:layout_marginRight="@dimen/stela_app_dp_60"
+        android:layout_marginTop="@dimen/stela_app_dp_8"
+        android:text="Enabeling Parental Controls hides all series containing mature content (e.g. violence, gore, sexual themes, drug use). Series will be hidden until Parental Controls are turned off."/>
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/stela_app_dp_20"
+        android:layout_marginTop="@dimen/stela_app_dp_20"/>
+</RelativeLayout>

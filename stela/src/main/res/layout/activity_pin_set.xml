@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/stela_app_sp_11"
+        android:textColor="@color/color_73"
+        android:layout_marginLeft="@dimen/stela_app_dp_20"
+        android:layout_marginRight="@dimen/stela_app_dp_32"
+        android:layout_marginTop="@dimen/stela_app_dp_24"
+        android:text="Please set a 4-digit PIN number. When Parental Controls are enabled, you will be asked for your PIN before you can disable Parental Controls and make changes to other Account Settings.
+" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/pin_view"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="@dimen/stela_app_dp_48"
+        android:inputType="number"
+        android:padding="@dimen/stela_app_dp_10"
+        android:textColor="@color/color_73"
+        android:textSize="41sp"
+        android:cursorVisible="false"
+        app:cursorColor="@color/color_73"
+        app:cursorWidth="1dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="4"
+        app:itemHeight="48dp"
+        app:itemSpacing="@dimen/stela_app_dp_10"
+        app:itemWidth="48dp"
+        app:lineColor="@color/gray_color_97"
+        app:lineWidth="2dp"
+        app:viewType="line" />
+    <!--    android:itemBackground="@mipmap/ic_launcher"-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_pin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stela_app_dp_60"
+        android:background="@color/stela_blue"
+        android:layout_below="@+id/pin_view"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/stela_app_dp_40"
+        android:layout_marginLeft="@dimen/stela_app_dp_40"
+        android:layout_marginRight="@dimen/stela_app_dp_40"
+        android:text="Set PIN"/>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_card_shadow_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+ >
+
+    <TextView
+        android:id="@+id/tv_inner_library_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/stela_app_always_dp_15"
+        android:layout_marginTop="@dimen/stela_app_dp_16"
+        android:textSize="@dimen/stela_app_sp_16"
+        android:textColor="@color/color_73"
+        tools:text="Enchanting" />
+
+    <TextView
+        android:id="@+id/tv_inner_library_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_inner_library_title"
+        android:layout_marginLeft="@dimen/stela_app_always_dp_15"
+        android:layout_marginTop="@dimen/stela_app_always_dp_8"
+        android:visibility="gone"
+        android:textColor="@color/color_73"
+        android:textSize="@dimen/stela_app_sp_12"
+        tools:text="Tales of Beauty  Darkness" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_line_e3"
+        android:layout_below="@+id/tv_inner_library_subtitle"
+        android:layout_marginTop="@dimen/stela_app_always_dp_13"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.common.baselibs"
+4    android:versionCode="70"
+5    android:versionName="2.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->G:\stela\client\Android\dev\stelanewapp\base-libs\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->G:\stela\client\Android\dev\stelanewapp\base-libs\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->G:\stela\client\Android\dev\stelanewapp\base-libs\src\main\AndroidManifest.xml:4:5-79
+11-->G:\stela\client\Android\dev\stelanewapp\base-libs\src\main\AndroidManifest.xml:4:22-76
+12    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+12-->G:\stela\client\Android\dev\stelanewapp\base-libs\src\main\AndroidManifest.xml:5:5-84
+12-->G:\stela\client\Android\dev\stelanewapp\base-libs\src\main\AndroidManifest.xml:5:22-81
+13    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+13-->G:\stela\client\Android\dev\stelanewapp\base-libs\src\main\AndroidManifest.xml:6:5-75
+13-->G:\stela\client\Android\dev\stelanewapp\base-libs\src\main\AndroidManifest.xml:6:22-72
+14
+15</manifest>

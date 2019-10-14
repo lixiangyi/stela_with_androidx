@@ -1,0 +1,146 @@
+{
+  "project_info": {
+    "project_number": "185137151789",
+    "firebase_url": "https://stela-android.firebaseio.com",
+    "project_id": "stela-android",
+    "storage_bucket": "stela-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185137151789:android:d55b9c08a2eae76b",
+        "android_client_info": {
+          "package_name": "com.stela.comics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185137151789-gusb3o6slretefiv6132bvajqhrovs96.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stela.comics",
+            "certificate_hash": "43db024d824657e2473cd4c92b7f6cb30cba8f88"
+          }
+        },
+        {
+          "client_id": "185137151789-itri2qv489g6lcagc5e2h61a96uluuhn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stela.comics",
+            "certificate_hash": "faea54b389cdf7e7adb543ed754367116d2a8644"
+          }
+        },
+        {
+          "client_id": "185137151789-s4lpmnivak049l8v5f667rnhlee50oq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEcsHJ81IaOW3K-PUYhGAX0QfKoi57GdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185137151789-s4lpmnivak049l8v5f667rnhlee50oq9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "185137151789-6akc38muik5k23g6a6m3ul9g5ocmggqj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.breakoutbit.Stela",
+                "app_store_id": "1054502004"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185137151789:android:8a8fc6cfffdb1373",
+        "android_client_info": {
+          "package_name": "com.stela.comics_unlimited"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185137151789-n8fghb2lk8lloj64eeucrd7u009iq56t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stela.comics_unlimited",
+            "certificate_hash": "faea54b389cdf7e7adb543ed754367116d2a8644"
+          }
+        },
+        {
+          "client_id": "185137151789-s4lpmnivak049l8v5f667rnhlee50oq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEcsHJ81IaOW3K-PUYhGAX0QfKoi57GdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185137151789-s4lpmnivak049l8v5f667rnhlee50oq9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "185137151789-6akc38muik5k23g6a6m3ul9g5ocmggqj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.breakoutbit.Stela",
+                "app_store_id": "1054502004"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185137151789:android:a0b960e21e3ff8d6",
+        "android_client_info": {
+          "package_name": "com.stela.fcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185137151789-s4lpmnivak049l8v5f667rnhlee50oq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEcsHJ81IaOW3K-PUYhGAX0QfKoi57GdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185137151789-s4lpmnivak049l8v5f667rnhlee50oq9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "185137151789-6akc38muik5k23g6a6m3ul9g5ocmggqj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.breakoutbit.Stela",
+                "app_store_id": "1054502004"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item_chapter"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/stela_app_dp_42"
+    android:background="@color/white"
+    tools:context=".ui.chapter.ChapterActivity">
+
+    <TextView
+        android:id="@+id/tv_chapter_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/body_text_color_59"
+        android:layout_marginLeft="@dimen/stela_app_dp_18"
+        android:layout_marginRight="@dimen/stela_app_dp_60"
+        android:maxLines="1"
+        tools:text="Trailer: Title"/>
+
+    <View
+        android:id="@+id/view_continue"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="80dp"
+        android:background="@color/stela_blue"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_line_e3"/>
+
+</RelativeLayout>

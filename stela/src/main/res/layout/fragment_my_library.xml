@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tb_library"
+        style="@style/TabLayoutCustom"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/stela_app_dp_3"
+        android:layout_height="@dimen/stela_app_dp_80"
+        app:tabGravity="fill"
+        app:elevation="0dp"
+        app:tabMaxWidth="0dp"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabPadding="-1dp"
+        app:tabPaddingBottom="-1dp"
+        app:tabPaddingEnd="-1dp"
+        app:tabPaddingStart="-1dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/tool_bar_shadow" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_library"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_series_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stela_app_dp_20"
+            android:layout_marginTop="@dimen/stela_app_dp_24"
+            android:layout_marginRight="@dimen/stela_app_dp_20"
+            android:lineSpacingExtra="3dp"
+            android:lineSpacingMultiplier="1.2"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            android:textColor="@color/text_color_999"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stela_app_dp_20"
+            android:layout_marginTop="@dimen/stela_app_dp_24"
+            android:layout_marginRight="@dimen/stela_app_dp_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/stela_app_dp_4"
+                android:drawableLeft="@mipmap/ic_uncollection"
+                android:drawablePadding="@dimen/stela_app_always_dp_10"
+                android:padding="@dimen/stela_app_dp_5"
+                android:text="Add to Collection"
+                android:textColor="@color/stela_blue_text"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/tv_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:drawableLeft="@mipmap/ic_unlike"
+                android:padding="@dimen/stela_app_dp_5"
+                android:drawablePadding="@dimen/stela_app_always_dp_10"
+                android:text="Like"
+                android:textColor="@color/stela_blue_text"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:padding="@dimen/stela_app_dp_5"
+                android:drawableLeft="@mipmap/ic_comment"
+                android:drawablePadding="@dimen/stela_app_always_dp_10"
+                android:text="Comment"
+                android:textColor="@color/stela_blue_text"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stela_app_dp_20"
+            android:layout_marginTop="@dimen/stela_app_dp_20"
+            android:text="Creator Credits"
+            android:textColor="@color/color_73"
+            android:textSize="@dimen/stela_app_sp_16" />
+
+        <TextView
+            android:id="@+id/tv_creator_credits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stela_app_dp_20"
+            android:layout_marginTop="@dimen/stela_app_dp_10"
+            android:layout_marginRight="@dimen/stela_app_dp_20"
+            android:lineSpacingExtra="3dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="Artist Name, Artist Name, Artist Name, Artist Name,Artist Name, Artist Name, Artist Name."
+            android:textColor="@color/color_73"
+            android:textSize="13sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/stela_app_dp_24"
+            android:layout_marginLeft="@dimen/stela_app_sp_14"
+            android:layout_marginRight="@dimen/stela_app_sp_14"
+            android:layout_marginTop="@dimen/stela_app_dp_28"
+            app:cardCornerRadius="6dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false"
+            android:padding="-3dp"
+            app:cardElevation="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:layout_marginLeft="14dp"
+                android:text="You May Also Like"
+                android:textColor="@color/color_73"
+                android:textSize="@dimen/stela_app_sp_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:orientation="horizontal">
+
+                <com.stela.comics_unlimited.widget.ScaleView.ScaleImage
+                    android:id="@+id/iv_like1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <com.stela.comics_unlimited.widget.ScaleView.ScaleImage
+                    android:id="@+id/iv_like2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <com.stela.comics_unlimited.widget.ScaleView.ScaleImage
+                    android:id="@+id/iv_like3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                     />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
